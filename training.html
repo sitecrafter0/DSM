@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Training — DSM Home Improvement</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; }
+    .page-header { background:#2ECC71; color:white; text-align:center; padding:80px 20px; }
+    .page-header h1 { font-size:2.5rem; margin-bottom:1rem; }
+    .page-header p { font-size:1.2rem; max-width:700px; margin:0 auto; }
+
+    .training-page { padding:60px 20px; }
+    .training-page h2 { color:#2ECC71; margin-bottom:1.5rem; }
+
+    .grid { display:grid; gap:2rem; margin-bottom:3rem; }
+    .grid-3 { grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); }
+    .grid-5 { grid-template-columns:repeat(auto-fit, minmax(120px,1fr)); }
+
+    .training-card {
+      background:white;
+      border-radius:10px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      text-align:center;
+      padding:1.5rem 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .training-card:hover {
+      transform: translateY(-5px);
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+    .training-card h3 { margin:0.5rem 0; color:#2ECC71; font-size:1.1rem; }
+    .training-card p { font-size:0.95rem; color:#333; }
+
+    .logos .seta-logo {
+      background:#2ECC71;
+      color:white;
+      text-align:center;
+      font-weight:700;
+      padding:20px 10px;
+      border-radius:8px;
+      font-size:0.95rem;
+    }
+
+    footer { background:black; color:white; padding:60px 20px; }
+    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-bottom:2rem; }
+    .footer-nav a { color:white; text-decoration:none; display:block; margin:0.3rem 0; }
+    .copyright { text-align:center; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="DSM Logo" class="logo" onerror="this.style.display='none'">
+        <span class="brand-text">DSM Home Improvement</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Team</a>
+        <a href="training.html" class="active">Training</a>
+        <a href="contact.html" class="btn-cta">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Accredited Training Programs</h1>
+      <p class="lede">Empowering South Africa through accredited, skills-based training in construction, security, management, and agriculture.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container training-page">
+
+    <!-- Accreditation Partners -->
+    <section>
+      <h2>Our Accreditation Partners</h2>
+      <p>
+        DSM Home Improvement partners with accredited training providers and SETAs to deliver high-quality, nationally recognized qualifications.
+        All programs are <strong>NQF-aligned</strong> and <strong>unit standards-based</strong>, ensuring that learners receive practical and relevant skills for the workplace.
+      </p>
+
+      <div class="grid grid-5 logos">
+        <div class="seta-logo">CETA</div>
+        <div class="seta-logo">SASSETA</div>
+        <div class="seta-logo">Services SETA</div>
+        <div class="seta-logo">TETA</div>
+        <div class="seta-logo">Agri SETA</div>
+      </div>
+    </section>
+
+    <!-- SASSETA Programs -->
+    <section>
+      <h2>SASSETA (Safety & Security)</h2>
+      <div class="grid grid-3">
+        <article class="training-card"><h3>General Security Practices</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>General Security Officer</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Occupational Health & Safety</h3><p>OHS training and workplace safety compliance</p></article>
+        <article class="training-card"><h3>Conduct Risk Assessments</h3><p>Identifying and managing workplace risks effectively</p></article>
+        <article class="training-card"><h3>Paralegal Services</h3><p>NQF Level 5</p></article>
+        <article class="training-card"><h3>Information Technology (IT)</h3><p>Fundamental digital and security tech literacy</p></article>
+      </div>
+    </section>
+
+    <!-- CETA Programs -->
+    <section>
+      <h2>CETA (Construction Education & Training Authority)</h2>
+      <div class="grid grid-3">
+        <article class="training-card"><h3>Plumbing</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Construction Plastering</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Construction Tiling</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Masonry</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Concreting</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Carpentry</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Painting</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Community House Building</h3><p>NQF Level 2</p></article>
+      </div>
+    </section>
+
+    <!-- Services SETA Programs -->
+    <section>
+      <h2>Services SETA</h2>
+      <div class="grid grid-3">
+        <article class="training-card"><h3>New Venture Creation</h3><p>NQF Level 2 & 4</p></article>
+        <article class="training-card"><h3>Project Management</h3><p>NQF Level 4</p></article>
+      </div>
+    </section>
+
+    <!-- TETA Programs -->
+    <section>
+      <h2>TETA (Transport Education & Training Authority)</h2>
+      <div class="grid grid-3">
+        <article class="training-card"><h3>Road Transport</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Professional Driving</h3><p>NQF Level 3</p></article>
+      </div>
+    </section>
+
+    <!-- Agri SETA Programs -->
+    <section>
+      <h2>Agri SETA (Agriculture Training)</h2>
+      <div class="grid grid-3">
+        <article class="training-card"><h3>Animal Production</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Plant Production</h3><p>NQF Level 3</p></article>
+        <article class="training-card"><h3>Mixed Farming Systems</h3><p>NQF Level 3</p></article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>DSM Home Improvement</h3>
+        <p>1345 Phetlho Street, Tikwana, Hoopstad, 9479</p>
+      </div>
+      <div>
+        <h4>Branches</h4>
+        <p>Free State, Northwest, Gauteng, Northern Cape</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="main-nav">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="about.html" class="nav-btn">About</a>
+  <a href="services.html" class="nav-btn">Services</a>
+  <a href="projects.html" class="nav-btn">Projects</a>
+  <a href="team.html" class="nav-btn">Team</a>
+  <a href="training.html" class="nav-btn">Training</a>
+  <a href="contact.html" class="nav-btn btn-cta">Contact</a>
+</nav>
+<button class="nav-toggle">☰</button>
+
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; <span id="year-training"></span> DSM Home Improvement. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year-training").textContent = new Date().getFullYear();
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
+  </script>
+</body>
+</html>

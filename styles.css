@@ -1,0 +1,137 @@
+/* ===== Root Variables ===== */
+:root {
+  --green: #118c4f;
+  --dark: #111;
+  --white: #fff;
+  --light: #f9f9f9;
+}
+
+/* ===== Global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--light);
+  color: var(--dark);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+/* ===== Header & Nav ===== */
+.site-header {
+  background: var(--white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.logo {
+  height: 45px;
+  margin-right: 10px;
+}
+
+/* ===== Navigation Buttons ===== */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--dark);
+  background: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-btn:hover {
+  color: var(--white);
+  background: var(--green);
+  border-color: var(--green);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav-btn.active {
+  color: var(--white);
+  background: var(--green);
+  border-color: var(--green);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.nav-btn.btn-cta {
+  background: var(--green);
+  color: var(--white);
+  border: 2px solid var(--green);
+}
+
+.nav-btn.btn-cta:hover {
+  background: #0d6f40;
+  border-color: #0d6f40;
+}
+
+/* ===== Mobile ===== */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    background: var(--white);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
