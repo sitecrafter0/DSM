@@ -1,173 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — DSM Home Improvement</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <style>
-    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; }
-    .page-header { background:#2ECC71; color:white; text-align:center; padding:80px 20px; }
-    .page-header h1 { font-size:2.5rem; margin-bottom:1rem; }
-    .page-header p { font-size:1.2rem; max-width:700px; margin:0 auto; }
-
-    .contact-page { padding:60px 20px; display:flex; flex-direction:column; gap:4rem; }
-    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; margin-bottom:4rem; }
-    @media (max-width:900px){ .contact-grid { grid-template-columns:1fr; } }
-
-    .contact-details h2, .contact-form h2, .map-section h2 { color:#2ECC71; margin-bottom:1rem; }
-
-    .contact-list { list-style:none; padding:0; margin:1rem 0; }
-    .contact-list li { margin-bottom:0.7rem; }
-
-    .contact-list a { color:#2ECC71; text-decoration:none; }
-    .social { display:flex; gap:1rem; margin-top:1rem; }
-    .social img { width:32px; height:32px; transition: transform 0.3s; }
-    .social img:hover { transform:scale(1.1); }
-
-    .contact-form .form { display:flex; flex-direction:column; gap:1rem; }
-    .form input, .form textarea {
-      padding:0.8rem; border-radius:8px; border:1px solid #ccc; width:100%; font-size:1rem;
-      transition:border 0.3s, box-shadow 0.3s;
-    }
-    .form input:focus, .form textarea:focus { border-color:#2ECC71; box-shadow:0 0 5px #2ECC71; outline:none; }
-    .btn-primary { background:#2ECC71; color:white; padding:0.8rem 1.5rem; border:none; border-radius:8px; cursor:pointer; font-size:1rem; transition: background 0.3s; }
-    .btn-primary:hover { background:#27ae60; }
-
-    .map-section { text-align:center; }
-    .map-container iframe { border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
-
-    footer { background:black; color:white; padding:60px 20px; }
-    .footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-bottom:2rem; }
-    .footer-nav a { color:white; text-decoration:none; display:block; margin:0.3rem 0; }
-    .copyright { text-align:center; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DSM Home Improvement</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.png" alt="DSM Logo" class="logo" onerror="this.style.display='none'">
-        <span class="brand-text">DSM Home Improvement</span>
-      </a>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🏗️ DSM Home Improvement</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="team.html">Team</a>
-        <a href="training.html">Training</a>
-        <a href="contact.html" class="active btn-cta">Contact</a>
-      </nav>
-
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
-
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1>Contact DSM Home Improvement</h1>
-      <p class="lede">We’d love to hear from you! Reach out for quotes, partnership opportunities, or general enquiries.</p>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <main class="container contact-page">
-    <section class="contact-grid">
-      <div class="contact-details">
-        <h2>Get In Touch</h2>
-        <p>Have a project in mind or need professional assistance? Contact our team directly or use the form to send us a message.</p>
-
-        <ul class="contact-list">
-          <li><strong>Director:</strong> Seleboho Daniel Matlhakoane</li>
-          <li><strong>Phone:</strong> 082 483 3444</li>
-          <li><strong>Fax:</strong> (086) 600 8313</li>
-          <li><strong>Email:</strong> <a href="mailto:dsmconstruction69@gmail.com">dsmconstruction69@gmail.com</a></li>
-          <li><strong>Physical Address:</strong><br>1345 Phetlho Street, Tikwana, Hoopstad, 9479</li>
-          <li><strong>Branches:</strong> Free State, North West, Gauteng, Northern Cape</li>
-          <li><strong>Municipality:</strong> Twelopele Municipality</li>
-          <li><strong>District:</strong> Lejweleputswa</li>
-        </ul>
-
-        <div class="social">
-          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" onerror="this.style.display='none'"></a>
-          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" onerror="this.style.display='none'"></a>
-          <a href="#"><img src="assets/icons/whatsapp.svg" alt="WhatsApp" onerror="this.style.display='none'"></a>
+    <!-- CONTACT HERO -->
+    <section style="background: linear-gradient(135deg, rgba(15, 169, 88, 0.1) 0%, rgba(255, 255, 255, 0.9) 100%); padding: 6rem 2rem 4rem;">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            <p class="section-subtitle">Get in touch with DSM Home Improvement for your next project</p>
         </div>
-      </div>
-
-      <div class="contact-form">
-        <h2>Send Us a Message</h2>
-        <form action="#" method="post" class="form">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your Name">
-
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required placeholder="Your Email">
-
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Subject">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
-
-          <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-      </div>
     </section>
 
-    <section class="map-section">
-      <h2>Find Us</h2>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps?q=Hoopstad,+Free+State,+South+Africa&output=embed"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <!-- CONTACT FORM -->
+                <form class="contact-form">
+                    <h2 style="color: #0fa958; margin-bottom: 2rem;">Send us a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g., 082 483 3444" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info">
+                    <div class="info-block">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:0824833444">082 483 3444</a></p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 0.5rem;">Available Monday - Friday, 08:00 - 17:00</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:dsmconstruction69@gmail.com">dsmconstruction69@gmail.com</a></p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 0.5rem;">We typically respond within 24 hours</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>🌍 Service Area</h3>
+                        <p>Entire South Africa</p>
+                        <p style="font-size: 0.9rem; color: #999; margin-top: 0.5rem;">We provide services nationwide and can arrange site visits</p>
+                    </div>
+
+                    <div class="map-container">
+                        <div style="text-align: center;">
+                            <p style="font-size: 1.5rem; margin-bottom: 1rem;">📍</p>
+                            <p><strong>Service Coverage Area:</strong> Entire South Africa</p>
+                            <p style="font-size: 0.9rem; margin-top: 1rem;">Contact us to discuss your location and project requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <h3>DSM Home Improvement</h3>
-        <p>1345 Phetlho Street, Tikwana, Hoopstad, 9479</p>
-      </div>
+    <!-- ADDITIONAL CONTACT DETAILS -->
+    <section style="background: white; padding: 4rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">Need More Information?</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, rgba(15, 169, 88, 0.05) 0%, rgba(255, 255, 255, 0.8) 100%); border-radius: 8px;">
+                    <h3 style="color: #0fa958; margin-bottom: 1rem; font-size: 1.3rem;">🏗️ General Inquiries</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Contact us for general information about our services, capabilities, and expertise.</p>
+                    <a href="tel:0824833444" style="color: #0fa958; font-weight: 600; text-decoration: none;">Call Now</a>
+                </div>
 
-      <div>
-        <h4>Branches</h4>
-        <p>Free State, Northwest, Gauteng, Northern Cape</p>
-      </div>
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, rgba(15, 169, 88, 0.05) 0%, rgba(255, 255, 255, 0.8) 100%); border-radius: 8px;">
+                    <h3 style="color: #0fa958; margin-bottom: 1rem; font-size: 1.3rem;">💼 Project Quotes</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Provide project details and receive competitive quotes from our experienced team.</p>
+                    <a href="mailto:dsmconstruction69@gmail.com" style="color: #0fa958; font-weight: 600; text-decoration: none;">Email Us</a>
+                </div>
 
-      <div>
-        <h4>Quick Links</h4>
-       <nav class="main-nav">
-  <a href="index.html" class="nav-btn">Home</a>
-  <a href="about.html" class="nav-btn">About</a>
-  <a href="services.html" class="nav-btn">Services</a>
-  <a href="projects.html" class="nav-btn">Projects</a>
-  <a href="team.html" class="nav-btn">Team</a>
-  <a href="training.html" class="nav-btn">Training</a>
-  <a href="contact.html" class="nav-btn btn-cta">Contact</a>
-</nav>
-<button class="nav-toggle">☰</button>
+                <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, rgba(15, 169, 88, 0.05) 0%, rgba(255, 255, 255, 0.8) 100%); border-radius: 8px;">
+                    <h3 style="color: #0fa958; margin-bottom: 1rem; font-size: 1.3rem;">🎯 Business Partnerships</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Interested in partnerships or collaboration opportunities with DSM?</p>
+                    <a href="mailto:dsmconstruction69@gmail.com" style="color: #0fa958; font-weight: 600; text-decoration: none;">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      </div>
-    </div>
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Transform Your Vision Into Reality</h2>
+            <p>Whether you have a small project or a large-scale development, DSM Home Improvement is ready to help</p>
+            <a href="#contact" class="cta-btn">Schedule a Consultation</a>
+        </div>
+    </section>
 
-    <div class="copyright">
-      &copy; <span id="year-contact"></span> DSM Home Improvement. All rights reserved.
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🏗️ DSM Home Improvement</h3>
+                <p>Professional construction and infrastructure solutions across South Africa</p>
+            </div>
 
-  <script>
-    document.getElementById("year-contact").textContent = new Date().getFullYear();
-    const navToggle = document.querySelector('.nav-toggle');
-    const mainNav = document.querySelector('.main-nav');
-    navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
-  </script>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 Phone: <a href="tel:0824833444">082 483 3444</a></p>
+                <p>📧 Email: <a href="mailto:dsmconstruction69@gmail.com">dsmconstruction69@gmail.com</a></p>
+                <p>🌍 Coverage: Entire South Africa</p>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 DSM Home Improvement. All rights reserved. | Owner: Seleboho D. Matlhakoane</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

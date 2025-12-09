@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - DSM Home Improvement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🏗️ DSM Home Improvement</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PORTFOLIO HERO -->
+    <section style="background: linear-gradient(135deg, rgba(15, 169, 88, 0.1) 0%, rgba(255, 255, 255, 0.9) 100%); padding: 6rem 2rem 4rem;">
+        <div class="container">
+            <h1 class="section-title">Our Portfolio</h1>
+            <p class="section-subtitle">Showcasing our best work and successful projects across South Africa</p>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio">
+        <div class="container">
+            <!-- FILTER BUTTONS -->
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="roads">Roads & Infrastructure</button>
+                <button class="filter-btn" data-filter="security">Security & IT</button>
+                <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+                <button class="filter-btn" data-filter="training">Training & Accreditation</button>
+            </div>
+
+            <!-- PROJECT GRID -->
+            <div class="portfolio-grid">
+                <!-- Construction Projects -->
+                <div class="project-card" data-category="construction">
+                    <div class="project-image">🏢</div>
+                    <div class="project-info">
+                        <p class="project-category">Construction</p>
+                        <h3>Commercial Office Complex - Johannesburg</h3>
+                        <p class="project-description">A modern 5-storey commercial office building with state-of-the-art facilities, parking, and retail spaces. Successfully completed on schedule and within budget.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction">
+                    <div class="project-image">🏠</div>
+                    <div class="project-info">
+                        <p class="project-category">Construction</p>
+                        <h3>Residential Housing Development - Pretoria</h3>
+                        <p class="project-description">A comprehensive 50-unit residential development featuring modern architecture, green spaces, and community facilities for sustainable living.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="construction">
+                    <div class="project-image">🏭</div>
+                    <div class="project-info">
+                        <p class="project-category">Construction</p>
+                        <h3>Industrial Warehouse Complex - Cape Town</h3>
+                        <p class="project-description">Construction of a large-scale industrial warehouse with loading facilities, office areas, and modern safety systems for a major logistics company.</p>
+                    </div>
+                </div>
+
+                <!-- Roads & Infrastructure -->
+                <div class="project-card" data-category="roads">
+                    <div class="project-image">🛣️</div>
+                    <div class="project-info">
+                        <p class="project-category">Roads & Infrastructure</p>
+                        <h3>Highway Upgrade - KZN Region</h3>
+                        <p class="project-description">Comprehensive road rehabilitation project covering 45km of highway with new asphalt, drainage systems, and safety features. Enhanced connectivity and safety.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="roads">
+                    <div class="project-image">🌉</div>
+                    <div class="project-info">
+                        <p class="project-category">Roads & Infrastructure</p>
+                        <h3>Bridge Construction - Limpopo</h3>
+                        <p class="project-description">Design and construction of a reinforced concrete bridge spanning critical infrastructure crossing. Engineered for durability and heavy-duty traffic.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="roads">
+                    <div class="project-image">🏗️</div>
+                    <div class="project-info">
+                        <p class="project-category">Roads & Infrastructure</p>
+                        <h3>Water Pipeline Installation - Mpumalanga</h3>
+                        <p class="project-description">Complete installation of 25km water distribution pipeline network connecting rural communities to reliable water supply infrastructure.</p>
+                    </div>
+                </div>
+
+                <!-- Security & IT -->
+                <div class="project-card" data-category="security">
+                    <div class="project-image">🔒</div>
+                    <div class="project-info">
+                        <p class="project-category">Security & IT</p>
+                        <h3>Smart Security System Implementation</h3>
+                        <p class="project-description">Installation of integrated CCTV, access control, and alarm systems for a large commercial facility with 24/7 monitoring capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-image">💻</div>
+                    <div class="project-info">
+                        <p class="project-category">Security & IT</p>
+                        <h3>IT Infrastructure Network - Johannesburg</h3>
+                        <p class="project-description">Complete network infrastructure deployment including servers, workstations, and cybersecurity systems for enterprise operations.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-image">🚨</div>
+                    <div class="project-info">
+                        <p class="project-category">Security & IT</p>
+                        <h3>Perimeter Security Upgrade</h3>
+                        <p class="project-description">Installation of advanced perimeter security including electric fencing, motion sensors, and integrated alarm systems for a manufacturing facility.</p>
+                    </div>
+                </div>
+
+                <!-- Agriculture -->
+                <div class="project-card" data-category="agriculture">
+                    <div class="project-image">🌾</div>
+                    <div class="project-info">
+                        <p class="project-category">Agriculture</p>
+                        <h3>Farm Development Project - Free State</h3>
+                        <p class="project-description">Complete farm infrastructure development including irrigation systems, storage facilities, and access roads for a modern agricultural operation.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="agriculture">
+                    <div class="project-image">🚜</div>
+                    <div class="project-info">
+                        <p class="project-category">Agriculture</p>
+                        <h3>Irrigation System Installation - Eastern Cape</h3>
+                        <p class="project-description">Design and installation of a sophisticated drip irrigation system covering 200 hectares with smart water management and conservation technology.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="agriculture">
+                    <div class="project-image">🏡</div>
+                    <div class="project-info">
+                        <p class="project-category">Agriculture</p>
+                        <h3>Greenhouse Complex - Durban Area</h3>
+                        <p class="project-description">Construction of state-of-the-art greenhouse facilities with climate control systems enabling year-round crop production.</p>
+                    </div>
+                </div>
+
+                <!-- Training & Accreditation -->
+                <div class="project-card" data-category="training">
+                    <div class="project-image">📚</div>
+                    <div class="project-info">
+                        <p class="project-category">Training & Accreditation</p>
+                        <h3>Construction Skills Training Program</h3>
+                        <p class="project-description">Comprehensive accredited training program for construction workers covering safety, technical skills, and project management principles.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="training">
+                    <div class="project-image">👨‍🎓</div>
+                    <div class="project-info">
+                        <p class="project-category">Training & Accreditation</p>
+                        <h3>Professional Certification Course</h3>
+                        <p class="project-description">Advanced certification program for infrastructure engineers and project managers with accreditation recognized across South Africa.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="training">
+                    <div class="project-image">🎯</div>
+                    <div class="project-info">
+                        <p class="project-category">Training & Accreditation</p>
+                        <h3>Safety & Compliance Training</h3>
+                        <p class="project-description">Specialized training in occupational health and safety, compliance standards, and best practices for construction industry professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to See What We Can Build for You?</h2>
+            <p>Let's discuss your project requirements and create a successful partnership</p>
+            <a href="contact.html" class="cta-btn">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🏗️ DSM Home Improvement</h3>
+                <p>Professional construction and infrastructure solutions across South Africa</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📞 Phone: <a href="tel:0824833444">082 483 3444</a></p>
+                <p>📧 Email: <a href="mailto:dsmconstruction69@gmail.com">dsmconstruction69@gmail.com</a></p>
+                <p>🌍 Coverage: Entire South Africa</p>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2025 DSM Home Improvement. All rights reserved. | Owner: Seleboho D. Matlhakoane</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
